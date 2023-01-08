@@ -1,5 +1,5 @@
-import {ViewStyle} from 'react-native';
+import { ViewStyle } from "react-native";
 export interface HeadingTypes {
-  title?: string;
-  wrapperStyle?: ViewStyle;
+	title?: string;
+	wrapperStyle?: ViewStyle;
 }

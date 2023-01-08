@@ -1,19 +1,24 @@
-import {View, Text, StyleSheet} from 'react-native';
-import React from 'react';
-import {HeadingTypes} from './headingTypes';
+/**
+ * @component HeaderBase
+ * @props `title`, `wrapperStyle`
+ */
 
-export default function ({title, wrapperStyle}: HeadingTypes) {
-  return (
-    <View style={[wrapperStyle]}>
-      <Text style={styles.headingStyle}>{title}</Text>
-    </View>
-  );
-}
+import { View, Text, StyleSheet } from "react-native";
+import React from "react";
+import { HeadingTypes } from "./headingTypes";
+
+export const HeadingBase = ({ title, wrapperStyle }: HeadingTypes) => {
+	return (
+		<View style={[wrapperStyle]}>
+			<Text style={styles.headingStyle}>{title}</Text>
+		</View>
+	);
+};
 
 const styles = StyleSheet.create({
-  headingStyle: {
-    fontWeight: '700',
-    color: 'black',
-    fontSize: 20,
-  },
+	headingStyle: {
+		fontWeight: "700",
+		color: "black",
+		fontSize: 20,
+	},
 });

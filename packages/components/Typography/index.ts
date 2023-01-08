@@ -1,3 +1,3 @@
-import Heading from './Heading';
+import { HeadingBase } from "./Heading";
 
-export {Heading};
+export { HeadingBase as Heading };
