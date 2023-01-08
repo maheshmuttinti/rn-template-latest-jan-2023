@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "react-native run-android && yarn reset-and-start",
     "android:aab": "react-native run-android --variant=release",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios && yarn reset-and-start",
     "start": "react-native start",
+    "reset-and-start": "react-native start --reset-cache",
     "test": "jest",
     "lint": "eslint .",
     "prettier-format": "prettier --config .prettierrc.js './**/*.{js,jsx,ts,tsx}' --write",
@@ -47,6 +48,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
     "@tsconfig/react-native": "^2.0.3",
